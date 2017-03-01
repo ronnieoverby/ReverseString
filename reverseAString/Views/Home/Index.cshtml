@@ -1,0 +1,23 @@
+﻿@model reverseAString.Models.Reverse
+@{
+    ViewBag.Title = "Reverse a String";
+}
+
+@using (Html.BeginForm("Index", "Home",FormMethod.Post))
+{
+<div class="row">
+    <div class="col-md-6 text-center">
+        <h2>Reverse a String</h2>
+        <p>
+            @Html.TextAreaFor(m => m.sInput)            
+        </p>
+        <p><input type="submit" value="submit" /></p>
+    </div>
+    <div class="col-md-6 text-center">
+        <h2>Result</h2>
+        <p>
+          @Model.sOutput
+        </p>
+    </div>    
+</div>
+}
