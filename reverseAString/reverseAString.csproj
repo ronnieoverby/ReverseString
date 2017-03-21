@@ -232,6 +232,8 @@
     <Content Include="Scripts\jquery.nicescroll.js" />
     <Content Include="Scripts\jquery.scrollTo.min.js" />
     <Content Include="Scripts\jquery.slimscroll.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -1394,6 +1396,7 @@
     <Content Include="Scripts\plugins\summernote\font\summernote.woff" />
     <Content Include="Scripts\plugins\toastr\toastr.js.map" />
     <Content Include="Views\Shared\_Layouttheme.cshtml" />
+    <Content Include="Views\Home\ReversedText.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

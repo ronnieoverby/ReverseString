@@ -32,6 +32,13 @@ namespace reverseAString.Controllers
             mReverse.sOutput = sReverseText;
             return View(mReverse);
         }
+
+        [HttpPost]
+        public PartialViewResult ReversedText(Reverse mReverse)
+        {
+            mReverse.sOutput = mReverse.sInput.Reverse();
+            return PartialView(mReverse);
+        }
     }
 
     public static class StringExtensions
