@@ -3,6 +3,15 @@
     padding-bottom: 20px;
 }
 
+strong {
+
+    font-size: 21px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:red;      
+}
+
+
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
@@ -21,6 +30,10 @@ input,
 select,
 textarea {
     max-width: 600px;
+}
+
+textarea.form-control {
+  height: 100%;
 }
 
 textarea#styled {

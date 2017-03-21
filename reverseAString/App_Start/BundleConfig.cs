@@ -24,9 +24,15 @@ namespace reverseAString
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css",
-                      "~/Content/StickyFooter.css"));
+                      "~/Content/bootstrap.min.css",
+                      "~/Content/core.css",
+                      "~/Content/components.css",
+                      "~/Content/icons.css",
+                      "~/Content/pages.css",
+                      "~/Content/menu.css",
+                      "~/Content/responsive.css",
+                      "~/Content/site.css"
+                      ));
         }
     }
 }
