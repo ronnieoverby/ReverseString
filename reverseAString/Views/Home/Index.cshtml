@@ -4,47 +4,35 @@
     ViewBag.Title = "Reverse a String";
 }
 
-
-
 <div class="container">
 
     <!-- Page-Title -->
     <div class="row">
-        <div class="col-sm-12">            
+        <div class="col-sm-12">
             <h4 class="page-title">Reverse a String</h4>
         </div>
     </div>
-    
+
     <div class="row">
-        <div class="col-md-6">
-            <div >
-                               
-                <h4 >Enter a string to reverse</h4>
-
-                @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "form-horzontal" }))
-                {
-                           <h2>Reverse a String</h2>
-                            <p>
-                                
-                                @Html.TextAreaFor(m => m.sInput, new { @class = "form-control styled" })
-                            </p>
-                            <p><input type="submit" value="submit" /></p>                   
-                }
-
-
-
-                @*<form class="form-horizontal" role="form" >       
-                </form>*@
-            </div>
+        <div class="col-md-5">
+            @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { id = "reverse-form" }))
+            {
+                <div class="form-group">
+                    @Html.LabelFor(m => m.sInput, "Enter a string to reverse")
+                    @Html.TextAreaFor(m => m.sInput, new { @class = "form-control" })
+                </div>
+            }
         </div><!-- end col -->
+        
+        <div class="col-md-1">
+            <label>Submit</label>
+            <button id="submitButton" type="submit" class="btn btn-default">> > ></button>
+        </div>
 
         <div class="col-md-6">
-            <div >
-
-                <h4 >Reversed String</h4>
-
-                @MarkdownHelper.Markdown(@Model.sOutput)
-
+            <label>Reversed String</label>
+            <div class="form-control" style="height: 100%;">
+                @MarkdownHelper.Markdown(Model.sOutput)
             </div>
         </div><!-- end col -->
 
@@ -52,9 +40,16 @@
     <!-- End row -->
 
 
-   
+
 </div> <!-- container -->
 
-
+@section scripts {
+    <script type="text/javascript">
+        $("#submitButton").click(function(e) {
+            e.preventDefault();
+            $("#reverse-form").submit();
+        });
+    </script>
+}
 
 
