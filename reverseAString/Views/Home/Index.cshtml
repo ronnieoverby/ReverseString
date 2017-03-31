@@ -26,7 +26,7 @@
     <!-- Page-Title -->
     <div class="row">
         <div class="col-sm-12">
-            <h4 class="page-title">Reverse a String</h4>
+            <img src="~/Images/ReverseAStringLogo.png" class="img-responsive" alt="Reverse A String Logo">            
         </div>
     </div>
 
@@ -43,7 +43,7 @@
             {
                 <div class="form-group">
                     @Html.LabelFor(m => m.sInput, "Enter a string to reverse")
-                    @Html.TextAreaFor(m => m.sInput, new { @class = "form-control" })
+                    @Html.TextAreaFor(m => m.sInput, new { @class = "form-control", rows=15 })
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
             }
