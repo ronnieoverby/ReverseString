@@ -1394,7 +1394,6 @@
     <Content Include="Scripts\plugins\toastr\toastr.js.map" />
     <Content Include="Views\Shared\_Layouttheme.cshtml" />
     <Content Include="Views\Home\ReversedText.cshtml" />
-    <Content Include="Views\Home\Video.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
